@@ -17,14 +17,24 @@ def format_temperature(temp):
 
 
 def convert_date(iso_string):
-    """Converts and ISO formatted date into a human-readable format.
+    iso_date = datetime.fromisoformat(iso_string)
+    human_readable = iso_date.strftime('%A %d %B %Y')
+    return human_readable
+
+result = convert_date('2021-07-05T07:00:00+08:00')
+print(result)
+        
+"""Converts and ISO formatted date into a human-readable format.
 
     Args:
         iso_string: An ISO date string.
     Returns:
         A date formatted like: Weekday Date Month Year e.g. Tuesday 06 July 2021
     """
-    pass
+
+
+
+pass
 
 
 def convert_f_to_c(temp_in_fahrenheit):
