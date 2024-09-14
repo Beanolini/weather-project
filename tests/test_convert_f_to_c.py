@@ -8,7 +8,6 @@ class ConvertTempTests(unittest.TestCase):
         unittest.TestCase.__init__(self, *args, **kwargs)
         self.maxDiff = None
 
-    def test_convert_f_to_c(self):
         temp_in_f = 90
         expected_result = 32.2
         result = weather.convert_f_to_c(temp_in_f)
